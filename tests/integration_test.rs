@@ -1,7 +1,7 @@
 use std::fs::File;
 use std::io::Read;
-use dmarc_parser_rs::{parse_report_message};
-use dmarc_parser_rs::report::{Feedback, ReportMetadata, DateRange, PolicyPublished, Alignment, Disposition, Record, Row, PolicyEvaluated, DmarcResult, Identifier, AuthResults, SpfAuthResult, SpfResult, DkimAuthResult, DkimResult};
+use dmarc_parser::{parse_report_message};
+use dmarc_parser::report::{Feedback, ReportMetadata, DateRange, PolicyPublished, Alignment, Disposition, Record, Row, PolicyEvaluated, DmarcResult, Identifier, AuthResults, SpfAuthResult, SpfResult, DkimAuthResult, DkimResult};
 use chrono::{Utc, TimeZone};
 
 #[test]
