@@ -46,6 +46,7 @@ fn get_expected_feedback() -> Feedback {
             spf_alignment: Alignment::Relaxed,
             domain_policy: Disposition::Reject,
             subdomain_policy: Disposition::None,
+            percentage: 100,
             failure_reporting: None,
         },
         records: vec![

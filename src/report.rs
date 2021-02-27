@@ -33,6 +33,8 @@ pub struct PolicyPublished {
     pub domain_policy: Disposition,
     #[serde(rename = "sp")]
     pub subdomain_policy: Disposition,
+    #[serde(rename = "pct")]
+    pub percentage: u8,
     pub failure_reporting: Option<String>
 }
 
