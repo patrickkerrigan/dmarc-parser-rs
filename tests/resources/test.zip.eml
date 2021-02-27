@@ -1,0 +1,41 @@
+MIME-Version: 1.0
+Message-ID: <123@example.org>
+Date: Sat, 22 Apr 2017 14:05:47 +0000
+Subject: Test
+From: Example <example@example.org>
+To: Example <example@example.org>
+Content-Type: multipart/mixed; boundary=001a113e7c4aec7a46054dc1de3a
+
+--001a113e7c4aec7a46054dc1de3a
+Content-Type: multipart/alternative; boundary=001a113e7c4aec7a42054dc1de38
+
+--001a113e7c4aec7a42054dc1de38
+Content-Type: text/plain; charset=UTF-8; format=flowed; delsp=yes
+
+
+
+--001a113e7c4aec7a42054dc1de38
+Content-Type: text/html; charset=UTF-8
+
+<div dir="ltr"><br></div>
+--001a113e7c4aec7a42054dc1de38--
+--001a113e7c4aec7a46054dc1de3a
+Content-Type: application/x-zip-compressed; name="test.zip"
+Content-Disposition: attachment; filename="test.zip"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 15b95fb9023bb946bc51
+Content-ID: <15b95fb9023bb946bc51>
+
+UEsDBBQAAAAIACNqlkpEuoVFGAIAANQIAAALAAAAZG1hcmMtMS54bWztVsFy2jAQvecrPNxrYSB
+gOorSU78gPXuEvAYVW9JIckr+vmtkCSehmTadzvSQE/Lb1e7b99Ye6P2pa7NHsE5qdTcr8vksAy
+V0LdX+bvbt4euncpbdsxvaANQ7Lo7sJsuoBaOtrzrwvOaeDxii2u4rxTtgD+B8hk+UJChkQMdly
+5TG++3TFzjxzrSQC91REkJj2slbXgmtPBe+kqrR7OC9cZ8JiXewMKk7bgXefJ0dyowsZc2KxXJ1
+u6bkgoQMJA+V5Wo/EkRoB3upWLHaFptysZrPKQlIjIOqz9FyXW62W+yuYjHyvFrqNlWJGt1K8VS
+ZftdKd4BEROP4ihnurRTHI1gr91zl/RGrhlDI4/VRdsxREg4j6EzDLGLDb4AMs/AdhKfEjIgzqL
+sCSlxEjPCsGAYcDmfC18ihikLbyNPqH0kJp3sroJKGFdtFXqzLvMhXS2yQ8JgpdK88KykJhwiP7
+eCRtz1KV8fAoId0RjvpcSnTJFNskjno0ODuYEKSJPBDNUIg6TIZ8kVXdCuORmUNystG4kuRrh2A
+12CrxuruqkvT+FjwVRnKe3+oLLi+9ZfKE3K/vwjn3FBpnHF8SGNedoG8bDskR0//xN7lKt+Uv/a
+3eKe/YS3fcNdw5666GwL/tbsvWL/D3jDkc3uH+aHFt0Jb1oUVj49JiWnnv1+yayz+yZItlvntGx
++RjyX7WLJrS0bJ5Q/KT1BLAQIUABQAAAAIACNqlkpEuoVFGAIAANQIAAALAAAAAAAAAAEAIAAAA
+AAAAABkbWFyYy0xLnhtbFBLBQYAAAAAAQABADkAAABBAgAAAAA=
+--001a113e7c4aec7a46054dc1de3a--
