@@ -102,7 +102,7 @@ fn get_expected_feedback() -> Feedback {
                     dkim: vec![
                         DkimAuthResult {
                             domain: "patrickkerrigan.uk".into(),
-                            selector: "mail".into(),
+                            selector: Some("mail".into()),
                             result: DkimResult::Pass,
                         },
                     ],
@@ -134,7 +134,7 @@ fn get_expected_feedback() -> Feedback {
                     dkim: vec![
                         DkimAuthResult {
                             domain: "patrickkerrigan.uk".into(),
-                            selector: "mail".into(),
+                            selector: Some("mail".into()),
                             result: DkimResult::Pass,
                         },
                     ],

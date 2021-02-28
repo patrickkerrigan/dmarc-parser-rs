@@ -113,7 +113,7 @@ pub enum SpfResult {
 #[derive(Deserialize, Debug, Clone, PartialEq)]
 pub struct DkimAuthResult {
     pub domain: String,
-    pub selector: String,
+    pub selector: Option<String>,
     pub result: DkimResult
 }
 
