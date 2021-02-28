@@ -45,7 +45,7 @@ fn get_expected_feedback() -> Feedback {
             dkim_alignment: Alignment::Strict,
             spf_alignment: Alignment::Relaxed,
             domain_policy: Disposition::Reject,
-            subdomain_policy: Disposition::None,
+            subdomain_policy: Some(Disposition::None),
             percentage: 100,
             failure_reporting: None,
         },
