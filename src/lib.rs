@@ -17,7 +17,13 @@ pub struct ParseError(String);
 pub fn parse_report_message(raw_message: &str) -> Result<Feedback, ParseError> {
     let mail = parse_mail(raw_message.as_bytes())?;
 
-    let subparts: Vec<ParsedMail> = mail.subparts.into_iter()
+    let possible_attachments = if mail.subparts.is_empty() {
+        vec![mail]
+    } else {
+        mail.subparts
+    };
+
+    let attachments: Vec<ParsedMail> = possible_attachments.into_iter()
         .filter(|x| {
             [
                 MIME_ZIP,
@@ -28,13 +34,12 @@ pub fn parse_report_message(raw_message: &str) -> Result<Feedback, ParseError> {
         })
         .collect();
 
-    let attachment = subparts
+    let attachment = attachments
         .first()
         .ok_or(ParseError("No suitable attachment found".into()))?;
 
     let xml = match attachment.ctype.mimetype.as_str() {
         MIME_ZIP | MIME_X_ZIP => decode_zip(attachment)?,
-
         MIME_GZIP | MIME_X_GZIP => decode_gzip(attachment)?,
 
         _ => return Err(ParseError("No suitable attachment found".into()))

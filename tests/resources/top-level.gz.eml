@@ -1,0 +1,22 @@
+MIME-Version: 1.0
+Message-ID: <123@example.org>
+Date: Sat, 22 Apr 2017 14:05:47 +0000
+Subject: Test
+From: Example <example@example.org>
+To: Example <example@example.org>
+Content-Type: application/x-gzip; name="test.gz"
+Content-Disposition: attachment; filename="test.gz"
+Content-Transfer-Encoding: base64
+X-Attachment-Id: 15b9608d13aab3653cf1
+Content-ID: <15b9608d13aab3653cf1>
+
+H4sIAAAAAAAAA+1Wy27bMBC85ysE3ytatmLLBcP01C9IzwJNrWTWEkmQVOr8fanwYcVxgzZFgR5
+yMjW73J3dGQnG96ehzx5BGy7F3aLIl4sMBJMNF93d4tvD10/VIrsnN7gFaPaUHclNlmENSmpbD2
+BpQy2dMIdK3dWCDkAewNjMPWGUIJ8BA+U9EdLd75++wIkOqoecyQEjHwppJ6tpzaSwlNmai1aSg
+7XKfEYo3nGFUTNQzdzN19m+TGDJG1Ks1uXtBqMz4jMceag1FV0g6KA9dFyQotwV22pVLpcYeSTG
+QTTP0WpTbXc7113EYuhltdRtviWsZM/ZU63Gfc/NARIR6cYXRFGrOTseQWveUZGPR1fVh3webY5
+8IAYjfwigUS3RDpt+PaSIhu/ALEYqIEa5vQvAyEREMUuKacDp8Ez4Gjm3RSZ15Knlj7QJI0fNoO
+aKFLtVXmyqvMjLtWuQ8JjJ5CgsqTDyhwiHdvBI+9GtromBaR/cKGm4daZMk8yxWea0h9Z5xyWkl
+YSJ2xBIe5kNedHVqRVHw7wBYXnL3UuRrh2ANqDrVsvhqkrzeCj4qgymoz3UGszY23PlGbnfN0Lw
+91QpzBge0phnL6DLtlNy1PRP5F2X+bb6tb7FO/X1tnxDXUWNuaquD/zX6l6wfoe8fsiX8k7zQ+/
+eCqnJ4C0eH9Mm5p3/3mTXWPwTk63W+e0bH5EPk32Y7JrJMDr/QfkJRLqFRdQIAAA=

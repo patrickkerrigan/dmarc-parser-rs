@@ -24,6 +24,16 @@ fn test_gzip_decode() {
     assert_eq!(get_expected_feedback(), x);
 }
 
+#[test]
+fn test_top_level_decode() {
+    let mut input = String::new();
+    let _ = File::open("tests/resources/top-level.gz.eml").unwrap().read_to_string(&mut input);
+
+    let x = parse_report_message(&input).unwrap();
+
+    assert_eq!(get_expected_feedback(), x);
+}
+
 
 fn get_expected_feedback() -> Feedback {
     Feedback {
