@@ -26,8 +26,10 @@ pub struct ReportMetadata {
 pub struct PolicyPublished {
     pub domain: String,
     #[serde(rename = "adkim")]
+    #[serde(default)]
     pub dkim_alignment: Alignment,
     #[serde(rename = "aspf")]
+    #[serde(default)]
     pub spf_alignment: Alignment,
     #[serde(rename = "p")]
     pub domain_policy: Disposition,
@@ -62,6 +64,12 @@ pub enum Alignment {
     Relaxed,
     #[serde(rename = "s")]
     Strict
+}
+
+impl Default for Alignment {
+    fn default() -> Self {
+        Alignment::Relaxed
+    }
 }
 
 #[derive(Deserialize, Debug, Clone, PartialEq)]

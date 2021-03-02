@@ -25,6 +25,26 @@ fn test_gzip_decode() {
 }
 
 #[test]
+fn test_xml_decode() {
+    let mut input = String::new();
+    let _ = File::open("tests/resources/test.xml.eml").unwrap().read_to_string(&mut input);
+
+    let x = parse_report_message(&input).unwrap();
+
+    assert_eq!(get_expected_feedback(), x);
+}
+
+#[test]
+fn test_bad_content_type_decode() {
+    let mut input = String::new();
+    let _ = File::open("tests/resources/bad-content-type.gz.eml").unwrap().read_to_string(&mut input);
+
+    let x = parse_report_message(&input).unwrap();
+
+    assert_eq!(get_expected_feedback(), x);
+}
+
+#[test]
 fn test_top_level_decode() {
     let mut input = String::new();
     let _ = File::open("tests/resources/top-level.gz.eml").unwrap().read_to_string(&mut input);
